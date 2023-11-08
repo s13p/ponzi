@@ -44,12 +44,38 @@
 	font-family: 'Scribbler', sans-serif !important;
 }
 </style>
+<style>
+	#money-rain {
+	  position: fixed;
+	  top: 0;
+	  left: 0;
+	  width: 100%;
+	  height: 100%;
+	  pointer-events: none;
+	  overflow: hidden;
+	  z-index: 9999; /* High z-index to ensure it's above other content */
+	}
   
+	.money {
+	  position: absolute;
+	  width: 50px; /* Adjust the size of the cash image */
+	  opacity: 0.7; /* You can change this to make it more or less transparent */
+	  will-change: transform;
+	  z-index: 9999;
+	}
+  
+	@keyframes fall {
+	  to {
+		transform: translateY(100vh);
+	  }
+	}
+  </style>
   
 </head>
 
 <body class="body-wrapper" data-spy="scroll" data-target=".privacy-nav">
-<div class="bg-animation">
+
+<div class="bg-animation">  <div id="money-rain"></div>
         <div id="stars"></div>
         <div id="stars2"></div>
         <div id="stars3"></div>
@@ -71,6 +97,9 @@
 	}
 </style>
 <nav class="navbar main-nav navbar-expand-lg px-2 px-sm-0 py-2 py-lg-0">
+
+	
+
   <div class="container">
     <a class="navbar-brand" href="index.html"><img class="logoo" src="./PNZ-05.png" alt=""></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -166,7 +195,7 @@
 		<div class="shape" data-aos="fade-down-left" data-aos-duration="500" data-aos-delay="0"></div>
 	</div>
 	<div class="container">
-	
+		
 	 
 		<div class="row align-items-center">
 			<div class="col-md-6 order-2 order-md-1 text-center text-md-left">
@@ -432,6 +461,33 @@
   <script src="plugins/google-map/gmap.js"></script>
   
   <script src="js/script.js"></script>
+  <script>
+	function createMoney() {
+	  const moneyRainContainer = document.getElementById('money-rain');
+	  const money = document.createElement('div');
+	  money.classList.add('money');
+	  money.style.left = `${Math.random() * window.innerWidth}px`;
+	  money.style.top = `-100px`;
+	  money.style.animation = `fall ${Math.random() * 3 + 2}s linear infinite`;
+	  money.style.backgroundImage = "url('https://upload.wikimedia.org/wikipedia/commons/4/44/United_States_one_dollar_bill%2C_obverse.png')";
+  
+	  moneyRainContainer.appendChild(money);
+  
+	  // Remove the money from the DOM after it has finished falling
+	  setTimeout(() => {
+		money.remove();
+	  }, parseFloat(money.style.animationDuration) * 1000);
+	}
+  
+	function startMoneyRain() {
+	  const numberOfMoneyFlakes = 20; // Adjust the number to your preference
+	  setInterval(createMoney, 3); // Adjust the timing for money creation
+	}
+  
+	// Start the money rain when the window loads
+	window.onload = startMoneyRain;
+  </script>
+  
 </body>
 
 </html>
