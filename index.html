@@ -44,53 +44,13 @@
 	font-family: 'Scribbler', sans-serif !important;
 }
 </style>
-<style>
- body, html {
-            margin: 0;
-            padding: 0;
-            height: 100%;
-			width: 100vw;
-        
-        }
 
-        .money-rain {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            pointer-events: none;
-            z-index: 9999;
-        }
-        .money-rain .money {
-            position: absolute;
-            width: 50px; /* Width of the cash image */
-            height: auto;
-            opacity: 1;
-            background: url('./kash.png') no-repeat center center;
-            background-size: contain;
-            animation: rain linear infinite;
-			z-index: 999999999999;
-        }
-
-        /* Create as many keyframe animations as you have cash images */
-        @keyframes rain {
-            0% { transform: translateY(0); }
-            100% { transform: translateY(100vh); }
-        }
-
-        /* Create multiple instances of the money elements with different delays and durations */
-        .money:nth-child(1) { left: 5%; animation-duration: 4s; animation-delay: 0s; }
-        .money:nth-child(2) { left: 15%; animation-duration: 5s; animation-delay: 1s; }
-        .money:nth-child(3) { left: 25%; animation-duration: 6s; animation-delay: 0.5s; }
-        /* Add as many as you want */
-
-  </style>
   
 </head>
 
 <body class="body-wrapper" data-spy="scroll" data-target=".privacy-nav">
-	
+
+ 
 <div class="bg-animation"> 
 	
         <div id="stars"></div>
@@ -192,11 +152,7 @@
 <!--====================================
 =            Hero Section            =
 =====================================-->
-<section class="section gradient-banner">		<div class="money-rain">
-	<div class="money"></div> <!-- You can copy and paste more of these, each will represent a falling banknote -->
-	<div class="money"></div>
-	<!-- Add as many .money elements as you want to make it rain cash -->
-</div>
+<section class="section gradient-banner">		
 
 	<div class="shapes-container">
 		<div class="shape" data-aos="fade-down-left" data-aos-duration="1500" data-aos-delay="100"></div>
@@ -222,7 +178,7 @@
 			<div class="col-md-6 order-2 order-md-1 text-center text-md-left">
 				<h2 style="font-family: 'grobold', cursive; size: 20px; letter-spacing: 2px; color: white;">Welcome to <br>
 				</h2><h1 style="font-family: 'grobold', cursive; size: 100px; letter-spacing: 1px; color: white;">PONZI</h1>
-                <h3 style="font-family: 'grobold', cursive; size: 1px; letter-spacing: 2px; color: white;"></h3>
+                <h3 style="font-family: 'grobold', cursive; size: 1px; letter-spacing: 2px; color: white;">CA : 0X000000000000000000000</h3>
 				<p class="text-white mb-5"></p>
 				<a href="https://t.me/PONZIERC" style="margin-top: 10px; background-color:#70c169;" target="_blank" class="btn btn-main-md">JOIN US</a>
 			<a href="Uniswap" style="margin-top: 10px; background-color:#70c169;" target="_blank" class="btn btn-main-md">BUY</a>
@@ -469,7 +425,11 @@
   <div class="scroll-top-to">
     <i class="ti-angle-up"></i>
   </div>
-
+  <div class="money-rain">
+	<div class="money"></div> <!-- You can copy and paste more of these, each will represent a falling banknote -->
+	<div class="money"></div>
+	<!-- Add as many .money elements as you want to make it rain cash -->
+</div>
   <!-- JAVASCRIPTS -->
   <script src="plugins/jquery/jquery.min.js"></script>
   <script src="plugins/bootstrap/bootstrap.min.js"></script>
