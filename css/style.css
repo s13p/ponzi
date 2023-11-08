@@ -149,7 +149,7 @@ a {
 
 a:focus,
 a:hover {
-  color: limegreen;
+  color: #70c169;
   text-decoration: none;
 }
 
@@ -158,7 +158,7 @@ a:hover {
 }
 
 .bg-blue {
- background: linear-gradient(10deg, darkgreen 0%, green 20%, limegreen 50%);
+ background: linear-gradient(10deg, darkgreen 0%, green 20%, #70c169 50%);
 }
 
 .bg-1 {
@@ -229,7 +229,7 @@ a:hover {
   height: 125px;
   width: 125px;
   font-size: 40px;
-  background: limegreen;
+  background: #70c169;
   border-radius: 100%;
   color: #70c169;
   line-height: 125px;
@@ -257,7 +257,7 @@ a:hover {
   font-size: 14px;
 }
 .form-control.main:focus {
-  border: 1px solid limegreen;
+  border: 1px solid #70c169;
   box-shadow: none;
 }
 
@@ -316,7 +316,7 @@ button:focus,
   padding: 20px 35px;
   font-size: 14px;
   background: #fff;
-  color: limegreen;
+  color: #70c169;
 }
 .btn-download span {
   margin-left: 5px;
@@ -326,7 +326,7 @@ button:focus,
 .btn-main {
   padding: 25px 45px;
   border-radius: 3px;
-  background: limegreen;
+  background: #70c169;
   color: #fff;
   outline: none;
 }
@@ -341,7 +341,7 @@ button:focus,
 .btn-main-md {
   padding: 17px 38px;
   border-radius: 3px;
-  background:limegreen;
+  background:#70c169;
   color: #fff;
   outline: none;
 }
@@ -356,7 +356,7 @@ button:focus,
 .btn-main-sm {
   padding: 15px 35px;
   border-radius: 3px;
-  background: limegreen;
+  background: #70c169;
   color: #fff;
   outline: none;
   font-size: 14px;
@@ -371,7 +371,7 @@ button:focus,
 
 .btn-white {
   background: white;
-  color: limegreen;
+  color: #70c169;
 }
 
 .btn-rounded-icon {
@@ -414,11 +414,11 @@ position: relative;
   font-size: 11px;
 }
 .main-nav .navbar-nav .nav-item.active .nav-link {
-  color: limegreen;
+  color: #70c169;
 }
 .main-nav .navbar-nav .nav-item.active .nav-link:before {
   content: "";
-  background: limegreen;
+  background: #70c169;
   width: 60%;
   height: 2px;
   position: absolute;
@@ -478,7 +478,7 @@ position: relative;
 }
 .main-nav .dropdown .dropdown-menu .dropdown-item.active, .main-nav .dropdown .dropdown-menu .dropdown-item.focus, .main-nav .dropdown .dropdown-menu .dropdown-item:focus, .main-nav .dropdown .dropdown-menu .dropdown-item:hover {
   background-color: transparent;
-  color: limegreen;
+  color: #70c169;
 }
 .main-nav .dropdown .dropdown-menu li:first-child {
   margin-top: 10px;
@@ -505,7 +505,7 @@ position: relative;
 
 .dropdown-submenu.active > a,
 .dropdown-submenu:hover > a {
-  color: limegreen;
+  color: #70c169;
 }
 
 .dropleft .dropdown-menu,
@@ -633,7 +633,7 @@ position: relative;
   height: 40px;
   line-height: 40px;
   text-align: center;
-  background: limegreen;
+  background: #70c169;
   color: #fff;
   transition: 0.3s;
   z-index: 999556;
@@ -829,7 +829,7 @@ position: relative;
 }
 .services .service-block i {
   font-size: 30px;
-  color: limegreen;
+  color: #70c169;
   margin-bottom: 15px;
   display: inline-block;
 }
@@ -876,7 +876,7 @@ position: relative;
 }
 .service .service-box .service-item i {
   font-size: 20px;
-  color: limegreen;
+  color: #70c169;
   display: inline-block;
   margin-bottom: 10px;
 }
@@ -975,7 +975,7 @@ position: relative;
 .video-promo .content-block a i.video {
   height: 125px;
   width: 125px;
-  background: limegreen;
+  background: #70c169;
   display: inline-block;
   font-size: 40px;
   color: #fff;
@@ -1024,10 +1024,10 @@ position: relative;
   color: #161616;
 }
 .testimonial .testimonial-slider .owl-dots .owl-dot:hover span {
-  background: limegreen;
+  background: #70c169;
 }
 .testimonial .testimonial-slider .owl-dots .owl-dot.active span {
-  background: limegreen;
+  background: #70c169;
 }
 
 /* homepage 3 */
@@ -1045,7 +1045,7 @@ position: relative;
   width: 200%;
   height: 200%;
   border-radius: 50%;
-  background-image: linear-gradient(45deg, limegreen 0%, green 20%, limegreen 50%);
+  background-image: linear-gradient(45deg, #70c169 0%, green 20%, #70c169 50%);
 }
 
 .pull-top {
@@ -1179,7 +1179,7 @@ hr {
   display: block;
   height: 2px;
   border: 0;
-  border-top: 2px solid limegreen;
+  border-top: 2px solid #70c169;
   margin: 1em 0;
   padding: 0;
 }
@@ -1188,7 +1188,7 @@ hr {
   height: 80px;
   width: 80px;
   text-align: center;
-  background: limegreen;
+  background: #70c169;
 }
 .icon-box i {
   line-height: 80px;
@@ -1229,7 +1229,7 @@ hr {
 }
 .team-sm .image .social-links {
   position: absolute;
-  background: limegreen;
+  background: #70c169;
   left: 0;
   right: 0;
   text-align: center;
@@ -1310,7 +1310,7 @@ hr {
   display: inline-block;
 }
 .featured-article article.featured .content h2 a:hover {
-  color: limegreen;
+  color: #70c169;
 }
 .featured-article article.featured .content p {
   margin-bottom: 25px;
@@ -1334,7 +1334,7 @@ hr {
   font-size: 20px;
 }
 .post-sm .post-title h3 a:hover {
-  color: limegreen;
+  color: #70c169;
 }
 .post-sm:hover .post-thumb img {
   transform: scale(1.3);
@@ -1450,12 +1450,12 @@ hr {
   transition: 0.3s ease-in;
 }
 .pagination-nav ul.pagination li a:hover {
-  background-color: limegreen;
+  background-color: #70c169;
   color: #fff;
   border-color: transparent;
 }
 .pagination-nav ul.pagination .active a {
-  background-color: limegreen;
+  background-color: #70c169;
   color: #fff;
   border-color: transparent;
 }
@@ -1473,10 +1473,10 @@ hr {
   padding: 20px;
 }
 .about .about-slider .owl-dots .owl-dot:hover span {
-  background: limegreen;
+  background: #70c169;
 }
 .about .about-slider .owl-dots .owl-dot.active span {
-  background: limegreen;
+  background: #70c169;
 }
 
 .create-stories .block img {
